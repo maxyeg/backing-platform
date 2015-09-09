@@ -1,0 +1,15 @@
+.form-label {
+  vertical-align: top;
+  display: block;
+}
+.form-row {
+  margin: 10px 0;
+}
+.author {
+  min-width: 100px;
+}
+.offer-label {
+  float: left;
+  margin: 0 10px;
+  font-weight: bold;
+}

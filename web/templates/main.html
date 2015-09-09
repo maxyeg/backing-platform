@@ -1,0 +1,27 @@
+<div ng-controller="MainController">
+    <div class="form-row">
+        <label class="form-label">Your name:</label>
+        <input type="text" maxlength="50" ng-model="offer.username"/>
+    </div>
+    <div class="form-row">
+        <label class="form-label">Your offer:</label>
+        <textarea rows="3" cols="30" ng-model="offer.description">
+        </textarea>
+    </div>
+    <button ng-click="addOffer()">
+        Add offer
+    </button>
+    <hr/>
+    <table>
+        <thead>
+        <th>Author</th>
+        <th>Description</th>
+        </thead>
+        <tbody ng-repeat="o in offers">
+        <tr ng-click="selectOffer(o.id)">
+            <td class="author">{{o.username}}</td>
+            <td class="description">{{o.description}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
