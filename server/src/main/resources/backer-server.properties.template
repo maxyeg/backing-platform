@@ -1,0 +1,10 @@
+#********** Postgres Driver **********
+jdbc.driver.class=org.postgresql.Driver
+jdbc.driver.url=jdbc:postgresql://localhost:5432/backer
+jdbc.driver.username=username
+jdbc.driver.password=password
+jdbc.driver.validationQuery=SELECT 1
+
+#********** JPA/Hibernate **********
+jpa.database-platform=org.hibernate.dialect.PostgreSQL82Dialect
+jpa.showSql=true
